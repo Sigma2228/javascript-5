@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer type="module" ></script>
 </head>
 <body>
     <h1>Виберіть напій:</h1>
@@ -17,6 +17,55 @@
             <option value="juice">Сік</option>
         </select>
     </form>
+    <br>
+    <br>
     <div id="message" class="message"></div>
+    <label for="">введіть день</label>
+    <input type="text" id="dayInput">
+    <button type="button" id="checkButton">перевірити</button>
+    <div id="mesage" class="mesage"></div>
+    <br>
+    <br>
+
+    <label for="">місяць</label>
+    <input type="text" id="monthInYear">
+    <button type="button" id="Check">перевірити</button>
+    <div id="messsage" class="messsage"></div>
+    <br>
+    <br>
+    <label for="">кількість днів</label>
+    <input type="text" id="daysInMonth">
+    <button type="button" id="Checkbutton">перевірити</button>
+    <div id="notification" class="messsage"></div>
+    <br>
+    <br>
+    <label for="">колір</label>
+    <input type="text" id="actionColor">
+    <button type="button" id="CheckButton">перевірити</button>
+    <div id="notice" class="messsage"></div>
+    <br>
+    <br>
+
+
+
+    <form id="calcForm">
+        <label for="number1">Число 1:</label>
+        <input type="number" id="number1" name="number1" required>
+        
+        <label for="number2">Число 2:</label>
+        <input type="number" id="number2" name="number2" required>
+        
+        <label for="operation">Операція:</label>
+        <select id="operation" name="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        
+        <button type="button" id="calculateButton">Вирахувати</button>
+    </form>
+
+    <p id="result"></p>
 </body>
 </html>

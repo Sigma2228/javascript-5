@@ -16,7 +16,7 @@ document.getElementById('drinkSelect').addEventListener('change', function () {
     document.getElementById('message').textContent = message;
 });
 document.getElementById('checkButton').addEventListener('click', function () {
-    const dayInput = document.getElementById('dayInput').value
+    const dayInput = document.getElementById('dayInput').value.trim().toLowerCase()
     const mesage = document.getElementById('mesage')
 
     switch (dayInput) {
@@ -37,7 +37,7 @@ document.getElementById('checkButton').addEventListener('click', function () {
     }
 })
 document.getElementById('Check').addEventListener('click', function () {
-    const monthInYear = document.getElementById('monthInYear').value
+    const monthInYear = document.getElementById('monthInYear').value.trim().toLowerCase()
     const messsage = document.getElementById('messsage')
 
     switch (monthInYear) {
@@ -66,7 +66,7 @@ document.getElementById('Check').addEventListener('click', function () {
     }
 })
 document.getElementById('Checkbutton').addEventListener('click', function () {
-    const daysInMonth = document.getElementById('daysInMonth').value
+    const daysInMonth = document.getElementById('daysInMonth').value.trim().toLowerCase()
     const notification = document.getElementById('notification')
 
     switch (daysInMonth) {
@@ -111,7 +111,7 @@ document.getElementById('Checkbutton').addEventListener('click', function () {
     }
 })
 document.getElementById('CheckButton').addEventListener('click', function () {
-    const actionColor = document.getElementById('actionColor').value
+    const actionColor = document.getElementById('actionColor').value.trim().toLowerCase()
     const notice = document.getElementById('notice')
 
     switch (actionColor) {

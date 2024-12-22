@@ -151,8 +151,13 @@ document.getElementById('calculateButton').addEventListener('click', function ()
             break;
         case '/':
             calcResult = number1 / number2
+            if (number2 === 0) {
+                result.textContent = 'На нуль ділити не можна';
+                return;
+            }
+            calcResult = number1 / number2;
             break;
-            default: 
+            default:
             result.textContent = 'введіть числа'
     }
     result.textContent = "Результат " + calcResult;
